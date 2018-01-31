@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:orientation="horizontal"
+    android:paddingTop="12dp">
+
+    <ImageButton
+        android:id="@+id/ibRemindMeClock"
+        android:layout_width="26dip"
+        android:layout_height="26dip"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="2dp"
+        android:background="@null"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_alarm_grey600_36dp" />
+
+    <TextView
+        android:id="@+id/tvTomorrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="6dp"
+        android:text="@string/str_tomorrow"
+        android:textColor="@color/md_grey_700" />
+
+    <TextView
+        android:id="@+id/tvMorning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="@string/str_morning"
+        android:textColor="@color/md_grey_700" />
+
+
+</LinearLayout>

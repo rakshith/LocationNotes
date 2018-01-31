@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cbNote"
+        android:checked="false"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/etNote"
+        android:layout_weight="1"
+        android:background="@android:color/transparent"
+        android:inputType="textNoSuggestions|textMultiLine"
+        android:hint="List item"
+        android:imeOptions="flagNoExtractUi"
+        android:textSize="@dimen/font_size_note_content_detail"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+        android:id="@+id/btnRemove"
+        android:visibility="gone"
+        android:background="@null"
+        android:src="@drawable/ic_note_remove"
+        android:layout_weight="0.10" />
+</LinearLayout>

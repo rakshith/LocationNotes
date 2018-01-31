@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.justforchangesake.locationnotes.notes.NotesContentActivity">
+
+    <item android:id="@+id/action_share" android:title="Color"
+        android:orderInCategory="100" app:showAsAction="always" android:icon="@drawable/ic_person_add_white_18dp"/>
+
+    <item android:id="@+id/action_color" android:title="Color"
+        android:orderInCategory="100" app:showAsAction="always" android:icon="@drawable/ic_color_lens_white_24dp"/>
+
+    <item android:id="@+id/action_snap_pic" android:title="Take picture"
+        android:orderInCategory="100" app:showAsAction="always" android:icon="@drawable/ic_camera_alt_white_24dp"/>
+
+    <item android:id="@+id/action_show_checkboxes" android:title="@string/action_show_checkboxes"
+        android:orderInCategory="100" app:showAsAction="never" android:icon="@drawable/ic_more_vert_white_24dp"
+        android:checkable="false"/>
+</menu>

@@ -1,0 +1,77 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.justforchangesake.locationnotes.notes.NoteContentFragment">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_marginLeft="@dimen/fragment_note_content_margin_left_right"
+        android:layout_marginRight="@dimen/fragment_note_content_margin_left_right"
+        android:descendantFocusability="beforeDescendants"
+        android:focusableInTouchMode="true">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="300px"
+            android:id="@+id/ivNoteImage"
+            android:visibility="gone"
+            android:scaleType="fitCenter"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etNoteTitle"
+            android:layout_gravity="center_horizontal"
+            android:hint="@string/etNoteTitleRes"
+            android:textStyle="bold"
+            android:background="@android:color/transparent"
+            android:layout_marginBottom="@dimen/fragment_note_content_margin_top_bottom"
+            android:layout_marginTop="@dimen/fragment_note_content_margin_top_bottom"
+            android:imeOptions="flagNoExtractUi"
+            android:textSize="@dimen/font_size_note_title"
+            android:typeface="sans"/>
+
+        <com.commonsware.cwac.richedit.RichEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etNoteConent"
+            android:layout_gravity="center_horizontal"
+            android:hint="@string/etNoteContentRes"
+            android:background="@android:color/transparent"
+            android:gravity="top|left"
+            android:imeOptions="flagNoExtractUi"
+            android:textSize="@dimen/font_size_note_content_detail"/>
+
+        <ListView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/noteListView"
+            android:background="@android:color/transparent"
+            android:divider="@null"
+            android:descendantFocusability="beforeDescendants"
+            android:focusableInTouchMode="true"
+            android:visibility="gone"/>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="50dp"
+            android:background="@android:color/darker_gray"/>
+
+        <include layout="@layout/layout_note_reminder"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Edited"
+            android:id="@+id/tvEditedNote"
+            android:paddingTop="15dp"
+            android:layout_gravity="bottom|right"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+</FrameLayout>
